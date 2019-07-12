@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tetris</title>
+    <style>
+        body {
+            background: rgb(192, 93, 26);
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        canvas {
+            border: 2px solid white;
+            height: 80vh;
+        }
+
+        #score, #level {
+            width: 20rem;
+            height: 2rem;
+            background: darkgrey;
+            margin: 1rem auto;
+            padding: .5rem;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>TETRIS</h1>
+    <p>Press Q and W to rotate the blocks!</p>
+    <div id="score"></div>
+    <div id="level">Level 1</div>
+    <canvas id="tetris" width="240" height="400"></canvas>
+    <script src="tetris.js"></script>
+</body>
+</html>
